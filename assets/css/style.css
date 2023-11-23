@@ -1,81 +1,80 @@
 /* Global Styles, Variables & Fonts */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
-  }
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
 
 @font-face {
-    font-family: "Santio";
-    src: url("../fonts/SANTIO/TTF/Santio\ regular.ttf");
-  }
+  font-family: "Santio";
+  src: url("../fonts/SANTIO/TTF/Santio\ regular.ttf");
+}
 
 @font-face {
-    font-family: "Tangerine";
-    src: url("../fonts/Tangerine/Tangerine-Regular.ttf");
-  }
+  font-family: "Tangerine";
+  src: url("../fonts/Tangerine/Tangerine-Regular.ttf");
+}
 
 @font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
-  }
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
 
 @font-face {
-    font-family: "MrDafoe";
-    src: url("../fonts/Mr_Dafoe/MrDafoe-Regular.ttf");
-  }
+  font-family: "MrDafoe";
+  src: url("../fonts/Mr_Dafoe/MrDafoe-Regular.ttf");
+}
 
 @font-face {
-    font-family: "Seaweed";
-    src: url("../fonts/Seaweed_Script/SeaweedScript-Regular.ttf");
-  }
+  font-family: "Seaweed";
+  src: url("../fonts/Seaweed_Script/SeaweedScript-Regular.ttf");
+}
 
-
-  /* Smooth Scrolling */
+/* Smooth Scrolling */
 
 html.lenis {
-    height: auto;
-  }
-  
+  height: auto;
+}
+
 .lenis.lenis-smooth {
-    scroll-behavior: auto;
-  }
-  
+  scroll-behavior: auto;
+}
+
 .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
-  
+  overscroll-behavior: contain;
+}
+
 .lenis.lenis-stopped {
-    overflow: hidden;
-  }
-  
+  overflow: hidden;
+}
+
 .lenis.lenis-scrolling iframe {
-    pointer-events: none;
-  }
+  pointer-events: none;
+}
 
 /* Header Styles */
 
 nav {
-    display: flex;
-    justify-content: end;
-    background-color:rgba(0, 0, 0, 0.6);
-    padding: 2rem;
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
 }
 
 .navButton a {
-    font-family: 'Inter';
-    font-size: 2rem;
-    color: whitesmoke;
-    border-bottom: 2px solid #E6CC8C;
-    padding-bottom: 10px;
+  font-family: "Inter";
+  font-size: 2rem;
+  color: whitesmoke;
+  border-bottom: 2px solid #e6cc8c;
+  padding-bottom: 10px;
 }
 
 /* .iconTop::before {
@@ -88,97 +87,98 @@ nav {
 } */
 
 .navSpan {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 /* Main Styles */
 
 body {
-    background-image: url(../img/cleo-topper.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: fit-content
+  background-image: url(../img/cleo-topper.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
 }
 
 main {
-    background-image: url(../img/cleo-topper.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: fit-content
+  background-image: url(../img/cleo-topper.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
 }
 
 /* Section 1 Styles */
 
 .section1 {
-    display: grid;
-    grid-template-columns: repeat(11,1fr);
-    grid-template-areas: ". art1 art1 art1 . . . . . . ."
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-areas:
+    ". art1 art1 art1 . . . . . . ."
     ". . . art2 art2 art2 art2 . . . ."
     ". . . . . art3 art3 art3 art3 art3 .";
-    background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Section 1 => Article 1 Styles */
 
 .article1 {
-    grid-area: art1;
-    margin-top: 8rem;
+  grid-area: art1;
+  margin-top: 8rem;
 }
 
 .info {
-        font-family: 'Inter';
-        font-size: 4rem;
-        color: whitesmoke;
+  font-family: "Inter";
+  font-size: 4rem;
+  color: whitesmoke;
 }
 
 .scrollInfo {
-    font-family: "Seaweed";
-    color: #E6CC8C;
-    font-size: 3rem;
-    margin-top: 8rem;
-    opacity: 0.7;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: fit-content;
-    border-radius: 0.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    white-space: nowrap;
+  font-family: "Seaweed";
+  color: #e6cc8c;
+  font-size: 3rem;
+  margin-top: 8rem;
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  white-space: nowrap;
 }
 
 .scrollInfo::after {
-    font-family: FontAwesome;
-    content: "\f358";
-    margin-left: 2rem;
-    opacity: 0.7;
+  font-family: FontAwesome;
+  content: "\f358";
+  margin-left: 2rem;
+  opacity: 0.7;
 }
 
 /* Section 1 => Article 2 Styles */
 
 .article2 {
-    grid-area: art2;
-    margin-top: 16rem;
+  grid-area: art2;
+  margin-top: 16rem;
 }
 
 .info2 {
-    font-family: 'Inter';
-    font-size: 2rem;
-    color: whitesmoke;
-    text-transform: uppercase;
+  font-family: "Inter";
+  font-size: 2rem;
+  color: whitesmoke;
+  text-transform: uppercase;
 }
 
 .info2Span {
-    font-family: "Inter";
-    color: #E6CC8C;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-family: "Inter";
+  color: #e6cc8c;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Section 1 => Article 3 Styles */
@@ -186,223 +186,236 @@ main {
 /* InfoBox1 Styles */
 
 .article3 {
-    grid-area: art3;
-    margin-top: 16rem;
+  grid-area: art3;
+  margin-top: 16rem;
 }
 
 .icon1 {
-    background-image: url(../img/stat-workers-color.svg);
-    height: 100px;
-    width: 100px;
-    filter: brightness(100);
-    margin-bottom: 1.5rem;
+  background-image: url(../img/stat-workers-color.svg);
+  height: 100px;
+  width: 100px;
+  filter: brightness(100);
+  margin-bottom: 1.5rem;
 }
 
 .heading1 {
-    font-family: 'Inter';
-    font-size: 8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: whitesmoke;
+  font-family: "Inter";
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: whitesmoke;
 }
 
 .subHeading1 {
-    font-family: 'Inter';
-    font-size: 2rem;
-    color: whitesmoke;  
-    text-transform: uppercase;
-    font-weight: 600;
+  font-family: "Inter";
+  font-size: 2rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .subHeading1Span {
-    font-family: "Inter";
-    color: #E6CC8C;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-family: "Inter";
+  color: #e6cc8c;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* InfoBox2 Styles */
 
 .infobox2 {
-    margin-top: 12rem;
+  margin-top: 12rem;
 }
 
 .icon2 {
-    background-image: url(../img/stat-pay-color.svg);
-    height: 100px;
-    width: 100px;
-    filter: brightness(100);
-    margin-bottom: 1.5rem;
+  background-image: url(../img/stat-pay-color.svg);
+  height: 100px;
+  width: 100px;
+  filter: brightness(100);
+  margin-bottom: 1.5rem;
 }
 
 .heading2 {
-    font-family: 'Inter';
-    font-size: 8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: whitesmoke;
+  font-family: "Inter";
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: whitesmoke;
 }
 
 .subHeading2 {
-    font-family: 'Inter';
-    font-size: 2rem;
-    color: whitesmoke;  
-    text-transform: uppercase;
-    font-weight: 600;
+  font-family: "Inter";
+  font-size: 2rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .subHeading2Span {
-    font-family: "Inter";
-    color: #E6CC8C;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-family: "Inter";
+  color: #e6cc8c;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .heading2Span {
-    color: #E6CC8C;
+  color: #e6cc8c;
 }
 
 /* InfoBox3 Styles */
 
 .infobox3 {
-    margin-top: 12rem;
+  margin-top: 12rem;
 }
 
 .icon3 {
-    background-image: url(../img/stat-pay-color.svg);
-    height: 100px;
-    width: 100px;
-    filter: brightness(100);
-    margin-bottom: 1.5rem;
+  background-image: url(../img/stat-pay-color.svg);
+  height: 100px;
+  width: 100px;
+  filter: brightness(100);
+  margin-bottom: 1.5rem;
 }
 
 .heading3 {
-    font-family: 'Inter';
-    font-size: 8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: whitesmoke;
+  font-family: "Inter";
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: whitesmoke;
 }
 
 .subHeading3 {
-    font-family: 'Inter';
-    font-size: 2rem;
-    color: whitesmoke;  
-    text-transform: uppercase;
-    font-weight: 600;
+  font-family: "Inter";
+  font-size: 2rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .subHeading3Span {
-    font-family: "Inter";
-    color: #E6CC8C;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-family: "Inter";
+  color: #e6cc8c;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* InfoBox4 Styles */
 
 .infobox4 {
-    margin-top: 16rem;
-    margin-bottom: 8rem;
+  margin-top: 16rem;
+  margin-bottom: 8rem;
 }
 
 .subHeading4 {
-    font-family: 'Inter';
-    font-size: 2rem;
-    color: whitesmoke;  
-    text-transform: uppercase;
-    font-weight: 600;
+  font-family: "Inter";
+  font-size: 2rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .subHeading4Span {
-    font-family: "Inter";
-    color: #E6CC8C;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-family: "Inter";
+  color: #e6cc8c;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Section 2 Styling */
 
 .section2 {
-    background-image: url(../img/see.png);
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+  background-image: url(../img/see.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .image1 {
-    background-image: url(../img/kid.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    
+  background-image: url(../img/kid.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 /* Footer Styles */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    padding-left: 6rem;
-    padding-top: 4rem;
-    background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 6rem;
+  padding-top: 4rem;
+  background-color: black;
 }
 
 .footerContent {
-    width: 35%;
+  width: 35%;
 }
 
 .footerInfo {
-    font-family: 'Inter';
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 0.9;
-    margin-bottom: 3rem;
+  font-family: "Inter";
+  font-size: 4rem;
+  color: whitesmoke;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: 3rem;
 }
 
 .footerBottom {
-    margin-top: 6rem;
-    margin-bottom: 0.5rem;
-    align-self: center;
-    color: whitesmoke;
-    font-family: 'Inter';
-    margin-bottom: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 0.5rem;
+  align-self: center;
+  color: whitesmoke;
+  font-family: "Inter";
+  margin-bottom: 1rem;
 }
 
 .roma {
-    color: #E6CC8C;
+  color: #e6cc8c;
 }
 
 .footerButton {
-    color: whitesmoke;
-    font-family: 'Inter';
-    padding: 1rem 2rem;
-    border: 1px solid whitesmoke;
+  color: whitesmoke;
+  font-family: "Inter";
+  padding: 1rem 2rem;
+  border: 1px solid whitesmoke;
 }
 
 .footerButton:hover {
-    box-shadow: 10px 5px 0px whitesmoke;
-    transition: 0.3s;
+  box-shadow: 10px 5px 0px whitesmoke;
+  transition: 0.3s;
 }
 
 .backUpButton {
-    align-self:end;
-    color: whitesmoke;
+  align-self: end;
+  color: whitesmoke;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .section1 {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-areas:
+      ". art1 art1 art1 . . . . . . ."
+      ". . . art2 art2 art2 art2 . . . ."
+      ". . . . . art3 art3 art3 art3 art3 .";
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }
