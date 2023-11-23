@@ -411,13 +411,16 @@ footer {
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
-    
   }
 
-  body {text-align: center;}
-  .article3 {text-align: center;}
+  body {
+    text-align: center;
+  }
+  .article3 {
+    text-align: center;
+  }
 
- .icon3 {
+  .icon3 {
     display: none;
   }
 
@@ -442,7 +445,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  
+
   .footerContent {
     width: 100%;
   }
@@ -455,16 +458,15 @@ footer {
     font-family: "Inter";
     margin-bottom: 1rem;
   }
-  
+
   .roma {
     color: #e6cc8c;
   }
-  
+
   .footerButton {
     color: whitesmoke;
     font-family: "Inter";
     padding: 1rem 2rem;
     border: 1px solid whitesmoke;
   }
-
 }
