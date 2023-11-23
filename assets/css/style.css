@@ -101,15 +101,6 @@ body {
   height: fit-content;
 }
 
-main {
-  background-image: url(../img/cleo-topper.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: fit-content;
-}
-
 /* Section 1 Styles */
 
 .section1 {
@@ -411,11 +402,69 @@ footer {
 @media only screen and (max-width: 768px) {
   .section1 {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
-      ". art1 art1 art1 . . . . . . ."
-      ". . . art2 art2 art2 art2 . . . ."
-      ". . . . . art3 art3 art3 art3 art3 .";
+      "art1"
+      "art2"
+      "art3";
     background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
   }
+
+  body {text-align: center;}
+  .article3 {text-align: center;}
+
+ .icon3 {
+    display: none;
+  }
+
+  .icon2 {
+    display: none;
+  }
+
+  .icon1 {
+    display: none;
+  }
+
+  .scrollInfo {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footerContent {
+    width: 100%;
+  }
+
+  .footerBottom {
+    margin-top: 6rem;
+    margin-bottom: 0.5rem;
+    align-self: center;
+    color: whitesmoke;
+    font-family: "Inter";
+    margin-bottom: 1rem;
+  }
+  
+  .roma {
+    color: #e6cc8c;
+  }
+  
+  .footerButton {
+    color: whitesmoke;
+    font-family: "Inter";
+    padding: 1rem 2rem;
+    border: 1px solid whitesmoke;
+  }
+
 }
