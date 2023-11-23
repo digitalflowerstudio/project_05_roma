@@ -78,14 +78,14 @@ nav {
     padding-bottom: 10px;
 }
 
-.iconTop::before {
+/* .iconTop::before {
     font-family: FontAwesome;
     content: "\f004";
     color: #E6CC8C;
     font-size: 2rem;
     margin-right: 1rem;
     opacity: 0.5;
-}
+} */
 
 .navSpan {
     font-weight: 200;
